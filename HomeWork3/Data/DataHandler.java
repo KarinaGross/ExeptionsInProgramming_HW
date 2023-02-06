@@ -32,7 +32,7 @@ public class DataHandler {
                 personData.putIfAbsent(personal_data[i], inputData.split(" ")[i]);
             }
 
-            DateValidator.dateIsValid(personData.get("birthDate"));
+            DateValidator.toValidDate(personData.get("birthDate"));
 
             person = new Person(personData);
             return person;

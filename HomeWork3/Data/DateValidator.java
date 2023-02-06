@@ -25,7 +25,7 @@ public class DateValidator {
         return -100;
     }
 
-    public static void dateIsValid(String inputDate) throws ParseException {
+    public static void toValidDate(String inputDate) throws ParseException {
         Calendar calendar = new GregorianCalendar();
         SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
